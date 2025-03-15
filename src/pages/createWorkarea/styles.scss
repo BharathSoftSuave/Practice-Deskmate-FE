@@ -1,0 +1,29 @@
+input {
+  background-color: var(--input) !important;
+  color: var(--white) !important;
+}
+
+/* Autofill styles */
+input:-webkit-autofill {
+  background-color: var(--primary) !important;
+  color: var(--white) !important;
+  -webkit-text-fill-color: var(--white) !important;
+  box-shadow: 0 0 0px 1000px var(--primary) inset !important;
+}
+
+input:-webkit-autofill:focus {
+  background-color: var(--primary) !important;
+  -webkit-text-fill-color: var(--white) !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  display: none !important;
+}
+
+
+/* Ensure no arrows ever, including on hover */
+input[type="number"]:hover::-webkit-inner-spin-button,
+input[type="number"]:hover::-webkit-outer-spin-button {
+  display: none !important;
+}
